@@ -1,0 +1,118 @@
+.container{
+    border: 3px solid rgb(92, 90, 90);
+    margin: 40px auto;
+    height: 600px;
+    width: 1000px;
+    position: relative;
+}
+
+.left img{
+    width: 370px;
+    height: 400px;
+    margin-top: 70px;
+}
+
+.right {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+p img{
+    width: 13px;
+    height: 13px;
+}
+
+.right-under{
+    position: relative;
+}
+
+.above{
+    position: absolute;
+    top: 90px;
+}
+
+.below{
+    position: absolute;
+    top:90px;
+    left:160px;
+    width: 200px;
+}
+
+.right-under p{
+    font-weight: bold;
+}
+
+.watermark{
+    position: relative;
+    bottom: 70px;
+}
+
+
+.watermark img{
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    margin-top: 30px;
+    /* here you can change the code for get another position like botttom for 300px ect. */
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 13%;
+    padding: 20px;
+    
+  }
+
+.row{
+    position: absolute;
+    top: 400px;
+    left: 40px;
+
+}
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    border: 2px solid black;
+    
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container2 {
+    position: absolute;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: black;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+  }

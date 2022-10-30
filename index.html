@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>test</title>
+  </head>
+  <body>
+    <!-- the hole project container -->
+    <div class="container">
+      <!-- left side of the container for the picture big and small  -->
+      <div class="left">
+        <!-- complete picture holder and for the js functions -->
+        <div class="row">
+          <div class="column">
+            <img
+              src="images/washing-machine.png"
+              alt="washing-machine"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              id="pic1"
+              src="images/washing-machine.png"
+              alt="washing-machine"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="images/washing-machine.png"
+              alt="washing-machine"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="images/washing-machine.png"
+              alt="washing-machine"
+              onclick="myFunction(this);"
+            />
+          </div>
+        </div>
+
+        
+        <!-- The expanding image container -->
+        <div class="container2">
+          <!-- Close the image -->
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >&times;</span
+          >
+
+          <!-- Expanded image -->
+          <img id="expandedImg" style="width: 100%" />
+          <div class="watermark">
+            <img
+              src="images/mig.png"
+              alt="watermark"
+            />
+          </div>
+  
+        </div>
+      </div>
+      <div class="right">
+        <h2><a href="">Test Artikel 003</a></h2>
+        <p>Für Preisinformationen bitte <a href="">Hire anmelden</a></p>
+        <div right-under>
+          <div class="above">
+            <p><img src="images/swap.png" alt="swap" />Vergleichen</p>
+            <p>
+              <img src="images/question-mark.png" alt="question-mark" />Fragen
+              zum Artikel?
+            </p>
+            <p><b>Artike-Nr.:</b></p>
+            <p><b>Hersteller:</b></p>
+          </div>
+          <div class="below">
+            <p><img src="images/book.png" alt="book" />Auf die Wunsvhliste</p>
+            <p><img src="images/star.png" alt="star" />Bewerten</p>
+            <p>sw10004</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
